@@ -81,7 +81,7 @@ If we hand you a new prompt tomorrow, you should be able to tell us if it's bett
 
 ## What you submit
 
-A GitHub repo (public or private — invite `@jayanthrl`) with:
+A GitHub repo (public or private — invite `@jayanth151002`) with:
 
 ```
 your-repo/
