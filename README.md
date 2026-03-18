@@ -5,7 +5,7 @@
 
 ---
 
-## 🎯 Interview Q&A
+
 
 **Did you find the real issues?** 
 Yes. I identified three catastrophic root causes in the original prompt:
