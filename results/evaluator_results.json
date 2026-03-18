@@ -1,0 +1,308 @@
+[
+  {
+    "call_id": "call_01",
+    "sub_scores": {
+      "empathy_score": 6,
+      "tone_score": 8,
+      "clarity_score": 7,
+      "negotiation_score": 6,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": true,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 2,
+        "text": "Your total outstanding is fifty thousand rupees.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity"
+      }
+    ],
+    "chain_of_thought": "The agent provided a gross early disclosure of the total outstanding amount before confirming the customer's identity, which is a violation. The agent did acknowledge the customer's issues with connectivity and attempted to clarify, showing some empathy. The negotiation aspect was handled well with a callback scheduled, and the tone remained firm and professional throughout.",
+    "critical_violations": [],
+    "score": 67,
+    "verdict": "good"
+  },
+  {
+    "call_id": "call_02",
+    "sub_scores": {
+      "empathy_score": 8,
+      "tone_score": 7,
+      "clarity_score": 8,
+      "negotiation_score": 6,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": true,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 22,
+        "text": "\u091c\u0940, \u092e\u0948\u0902 \u0938\u092e\u091d \u0917\u092f\u093e\u0964 \u0924\u094b \u0906\u092a\u0915\u0947 \u092a\u0924\u093f \u0928\u0947 \u0906\u092a\u0915\u094b \u092c\u0924\u093e\u092f\u093e \u0925\u093e \u0915\u093f \u0909\u0928\u094d\u0939\u094b\u0902\u0928\u0947 \u092a\u0942\u0930\u093e \u092d\u0941\u0917\u0924\u093e\u0928 \u0915\u0930 \u0926\u093f\u092f\u093e \u0939\u0948?",
+        "reason_why_bad": "Agent proceeds to dispute without customer explicitly stating that the loan is not theirs or that it was paid off."
+      }
+    ],
+    "chain_of_thought": "The agent did not switch languages despite the customer's repeated requests, which could lead to a language switch failure. However, the agent did acknowledge the customer's emotions and offered a callback, which is a positive aspect. The agent's tone was mostly appropriate, but there was a critical violation regarding the unauthorized dispute.",
+    "critical_violations": [
+      "UNAUTHORIZED_DISPUTE"
+    ],
+    "score": 70,
+    "verdict": "bad"
+  },
+  {
+    "call_id": "call_03",
+    "sub_scores": {
+      "empathy_score": 8,
+      "tone_score": 7,
+      "clarity_score": 6,
+      "negotiation_score": 6,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": true,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 36,
+        "text": "proceed_to_dispute",
+        "reason_why_bad": "Agent calls proceed_to_dispute without customer explicitly stating any reason for dispute."
+      }
+    ],
+    "chain_of_thought": "The agent did not switch languages as requested multiple times by the customer, which is a critical violation. The agent also initiated a dispute without the customer providing a valid reason, which is another critical violation. The empathy shown by the agent was good, and they offered a payment solution, but the clarity of communication was somewhat lacking due to language issues.",
+    "critical_violations": [
+      "UNAUTHORIZED_DISPUTE"
+    ],
+    "score": 68,
+    "verdict": "bad"
+  },
+  {
+    "call_id": "call_04",
+    "sub_scores": {
+      "empathy_score": 8,
+      "tone_score": 8,
+      "clarity_score": 8,
+      "negotiation_score": 6,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": true,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 4,
+        "text": "Okay, Vikram, I'm calling about your DemoLender education loan. There's an outstanding amount of forty-three thousand seven hundred and forty-seven rupees.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity"
+      }
+    ],
+    "chain_of_thought": "The agent maintained a professional tone and acknowledged the customer's situation, offering options for managing the loan. However, there was a critical violation regarding early disclosure of the outstanding amount before confirming the customer's identity. The agent also repeated some phrases, but overall, the conversation was handled properly with a callback scheduled.",
+    "critical_violations": [],
+    "score": 72,
+    "verdict": "good"
+  },
+  {
+    "call_id": "call_05",
+    "sub_scores": {
+      "empathy_score": 8,
+      "tone_score": 8,
+      "clarity_score": 8,
+      "negotiation_score": 6,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": true,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 3,
+        "text": "There's fifty thousand rupees pending on your DemoLender loan.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity"
+      },
+      {
+        "turn_index": 26,
+        "text": "I understand. So, you're saying you'll pay the full fifty thousand rupees on April one, and you want to ensure there are no extra",
+        "reason_why_bad": "Agent proceeds to dispute without customer explicitly stating any unauthorized claim."
+      }
+    ],
+    "chain_of_thought": "The agent demonstrated empathy and maintained a firm tone throughout the conversation. However, there was a gross early disclosure of the amount owed before the customer confirmed their identity, which is a critical violation. Additionally, the agent proceeded to dispute without the customer stating any unauthorized claim, which is another violation. The agent did offer a payment solution and acknowledged the customer's emotions effectively.",
+    "critical_violations": [],
+    "score": 72,
+    "verdict": "good"
+  },
+  {
+    "call_id": "call_06",
+    "sub_scores": {
+      "empathy_score": 6,
+      "tone_score": 7,
+      "clarity_score": 8,
+      "negotiation_score": 4,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": false,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 16,
+        "text": "We might even be able to remove some of the penalty charges from your fifty thousand rupees.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity"
+      }
+    ],
+    "chain_of_thought": "The agent did not switch languages despite the customer's dissatisfaction with the service, but there was no explicit request for a language change. The agent also proceeded to dispute without the customer explicitly stating they did not owe the loan. The empathy shown was moderate, and the tone was mostly neutral. The clarity was good, but the negotiation score was low due to no payment options being offered. The compliance score was affected by the gross early disclosure of the amount owed.",
+    "critical_violations": [],
+    "score": 71,
+    "verdict": "good"
+  },
+  {
+    "call_id": "call_07",
+    "sub_scores": {
+      "empathy_score": 0,
+      "tone_score": 7,
+      "clarity_score": 5,
+      "negotiation_score": 0,
+      "repetition_penalty": 5,
+      "compliance_score": 6
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": false,
+      "offered_payment_solution": false,
+      "repeated_phrases": true,
+      "escalation_handled_properly": false
+    },
+    "worst_messages": [
+      {
+        "turn_index": 9,
+        "text": "We have fifty-five thousand three hundred and thirty-five rupees pending on the account.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity"
+      },
+      {
+        "turn_index": 25,
+        "text": "Yes, I understand. I am calling about your DemoLender loan, and there's a pending amount of fifty-five thousand.",
+        "reason_why_bad": "Repetition of the same information without addressing customer concerns"
+      },
+      {
+        "turn_index": 49,
+        "text": "DemoLender \u0bb2\u0bcb\u0ba9\u0bc8\u0baa\u0bcd \u0baa\u0ba4\u0bcd\u0ba4\u0bbf\u0ba4\u0bbe\u0ba9\u0bcd \u0baa\u0bc7\u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc7\u0ba9\u0bcd. \u0b89\u0b99\u0bcd\u0b95 DemoLender \u0bb2\u0bcb\u0ba9\u0bcd\u0bb2 \u0b90\u0bae\u0bcd\u0baa\u0ba4\u0bcd\u0ba4\u0bc1 \u0b90\u0ba8\u0bcd\u0ba4\u0bbe\u0baf\u0bbf\u0bb0\u0ba4\u0bcd\u0ba4\u0bc1 \u0bae\u0bc1\u0ba9\u0bcd\u0ba9\u0bc2\u0bb1\u0bcd\u0bb1\u0bc1 \u0bae\u0bc1\u0baa\u0bcd\u0baa\u0ba4\u0bcd\u0ba4\u0bbf \u0b90\u0ba8\u0bcd\u0ba4\u0bc1 \u0bb0\u0bc2\u0baa\u0bbe\u0baf\u0bcd \u0baa\u0bbe\u0b95\u0bcd\u0b95\u0bbf \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1.",
+        "reason_why_bad": "Repetition of the same information without addressing customer concerns"
+      }
+    ],
+    "chain_of_thought": "The agent failed to switch languages despite the customer's repeated requests, leading to a critical violation. The agent also disclosed the outstanding amount too early in the conversation, which is a gross early amount disclosure. The agent's responses were repetitive and did not address the customer's needs or emotions, resulting in low empathy and negotiation scores.",
+    "critical_violations": [
+      "LANGUAGE_SWITCH_FAILURE"
+    ],
+    "score": 28,
+    "verdict": "bad"
+  },
+  {
+    "call_id": "call_08",
+    "sub_scores": {
+      "empathy_score": 0,
+      "tone_score": 7,
+      "clarity_score": 5,
+      "negotiation_score": 0,
+      "repetition_penalty": 3,
+      "compliance_score": 10
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": false,
+      "offered_payment_solution": false,
+      "repeated_phrases": true,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 1,
+        "text": "Hello, this is Alex from DemoCompany, calling about your DemoLender loan. There are some charges on your account I can help remove. Can we talk for a moment?",
+        "reason_why_bad": "Repetition of the same introduction without customer engagement."
+      },
+      {
+        "turn_index": 13,
+        "text": "I see. Suresh Rao, I'm calling about your DemoLender education loan. We're showing a pending amount of fifty thousand rupees.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity."
+      }
+    ],
+    "chain_of_thought": "The agent repeated their introduction multiple times without engaging the customer, which is unnecessary and reflects poor communication. The agent also disclosed the pending amount before confirming the customer's identity, which is a critical violation of privacy and protocol. However, the agent handled the escalation properly by ending the call when it was clear they reached the wrong person.",
+    "critical_violations": [],
+    "score": 82,
+    "verdict": "good"
+  },
+  {
+    "call_id": "call_09",
+    "sub_scores": {
+      "empathy_score": 6,
+      "tone_score": 7,
+      "clarity_score": 6,
+      "negotiation_score": 6,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": true,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 5,
+        "text": "I see you have fifty thousand rupees pending.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity"
+      }
+    ],
+    "chain_of_thought": "The agent disclosed the pending amount before confirming the customer's identity, which is a critical violation. The agent did acknowledge the customer's emotions and offered a payment solution, but the clarity of communication was somewhat lacking due to audio issues. The tone remained firm but not aggressive, and there were no critical violations present.",
+    "critical_violations": [],
+    "score": 64,
+    "verdict": "bad"
+  },
+  {
+    "call_id": "call_10",
+    "sub_scores": {
+      "empathy_score": 4,
+      "tone_score": 7,
+      "clarity_score": 6,
+      "negotiation_score": 2,
+      "repetition_penalty": 3,
+      "compliance_score": 8
+    },
+    "binary_signals": {
+      "acknowledged_user_emotion": true,
+      "offered_payment_solution": false,
+      "repeated_phrases": false,
+      "escalation_handled_properly": true
+    },
+    "worst_messages": [
+      {
+        "turn_index": 2,
+        "text": "You have fifty thousand rupees pending.",
+        "reason_why_bad": "Gross early disclosure before borrower confirmed identity"
+      }
+    ],
+    "chain_of_thought": "The agent disclosed the pending amount before the customer confirmed their identity, which is a critical violation. The empathy score is low due to limited genuine acknowledgment of the customer's situation. The tone is firm but not overly urgent. Clarity is somewhat lacking due to vague responses. The negotiation score is low as no payment options were offered. The repetition penalty is moderate due to some repeated phrases.",
+    "critical_violations": [],
+    "score": 50,
+    "verdict": "bad"
+  }
+]

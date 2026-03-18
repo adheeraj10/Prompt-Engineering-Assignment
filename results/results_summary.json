@@ -1,0 +1,75 @@
+{
+  "total_calls": 10,
+  "avg_score": 59.6,
+  "min_score": 34,
+  "max_score": 72,
+  "good_count": 2,
+  "bad_count": 8,
+  "good_pct": 20.0,
+  "per_call": [
+    {
+      "call_id": "call_01",
+      "score": 68,
+      "verdict": "good"
+    },
+    {
+      "call_id": "call_02",
+      "score": 70,
+      "verdict": "bad"
+    },
+    {
+      "call_id": "call_03",
+      "score": 68,
+      "verdict": "bad"
+    },
+    {
+      "call_id": "call_04",
+      "score": 72,
+      "verdict": "good"
+    },
+    {
+      "call_id": "call_05",
+      "score": 72,
+      "verdict": "bad"
+    },
+    {
+      "call_id": "call_06",
+      "score": 61,
+      "verdict": "bad"
+    },
+    {
+      "call_id": "call_07",
+      "score": 34,
+      "verdict": "bad"
+    },
+    {
+      "call_id": "call_08",
+      "score": 42,
+      "verdict": "bad"
+    },
+    {
+      "call_id": "call_09",
+      "score": 64,
+      "verdict": "bad"
+    },
+    {
+      "call_id": "call_10",
+      "score": 45,
+      "verdict": "bad"
+    }
+  ],
+  "sub_score_averages": {
+    "empathy_score": 5.4,
+    "tone_score": 7.3,
+    "clarity_score": 6.8,
+    "negotiation_score": 4.0,
+    "compliance_score": 8.2,
+    "repetition_penalty": 3.2
+  },
+  "binary_signal_rates_pct": {
+    "acknowledged_user_emotion": 80.0,
+    "offered_payment_solution": 60.0,
+    "repeated_phrases": 20.0,
+    "escalation_handled_properly": 90.0
+  }
+}
